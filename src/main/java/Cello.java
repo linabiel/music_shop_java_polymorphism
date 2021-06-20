@@ -1,4 +1,4 @@
-public class Cello extends Instrument implements IPlay, ISell {
+public class Cello extends Instrument implements IPlay {
 
     public Cello(String material, String colour, String type) {
         super(material, colour, type);
@@ -8,7 +8,4 @@ public class Cello extends Instrument implements IPlay, ISell {
         return "playing" + sound;
     }
 
-    public int calculateMarkup() {
-        return 0;
-    }
 }

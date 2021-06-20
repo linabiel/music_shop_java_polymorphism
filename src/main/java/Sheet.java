@@ -8,8 +8,24 @@ public class Sheet implements ISell{
         this.sellingPrice = sellingPrice;
     }
 
+    public int getBuyingPrice() {
+        return buyingPrice;
+    }
+
+    public void setBuyingPrice(int buyingPrice) {
+        this.buyingPrice = buyingPrice;
+    }
+
+    public int getSellingPrice() {
+        return sellingPrice;
+    }
+
+    public void setSellingPrice(int sellingPrice) {
+        this.sellingPrice = sellingPrice;
+    }
+
     @Override
-    public int calculateMarkup() {
+    public double calculateMarkup() {
         return 0;
     }
 }

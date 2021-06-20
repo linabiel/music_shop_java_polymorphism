@@ -1,10 +1,18 @@
 public class Piano extends SellableInstrument implements IPlay, ISell{
 
-    private String keys;
+    private int keys;
 
 
-    public Piano(String material, String colour, String type, int buyingPrice, int sellingPrice, String keys) {
+    public Piano(String material, String colour, String type, double buyingPrice, double sellingPrice, int keys) {
         super(material, colour, type, buyingPrice, sellingPrice);
+        this.keys = keys;
+    }
+
+    public int getKeys() {
+        return keys;
+    }
+
+    public void setKeys(int keys) {
         this.keys = keys;
     }
 
@@ -12,9 +20,9 @@ public class Piano extends SellableInstrument implements IPlay, ISell{
         return "playing" + sound;
     }
 
+//    public double calculateMarkup() {
+//        double markup = getBuyingPrice() * 0.2;
+//        return markup;
+//    }
 
-    @Override
-    public int calculateMarkup() {
-        return 0;
-    }
 }
