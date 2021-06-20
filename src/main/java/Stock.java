@@ -18,7 +18,14 @@ public class Stock {
         for (ISell piano : pianos) {
             return piano.getType();
         }
-        return "No pianos in stock atm";
+        return "No pianos are in stock atm";
+    }
+
+    public String searchPianoByType(ISell piano) {
+        if (pianos.contains(piano)) {
+             return piano.getType();
+        }
+        return "Type not in stock";
     }
 
     public void addPianoToStock(Piano piano) {

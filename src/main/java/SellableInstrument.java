@@ -58,4 +58,6 @@ public abstract class SellableInstrument implements ISell {
         return getBuyingPrice() * 0.2;
     }
 
+
+
 }
