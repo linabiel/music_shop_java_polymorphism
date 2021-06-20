@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 
 public class PianoTest {
 
-    Piano piano;
+    private Piano piano;
 
     @Before
     public void before() {

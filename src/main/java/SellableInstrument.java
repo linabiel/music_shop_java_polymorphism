@@ -55,8 +55,7 @@ public abstract class SellableInstrument implements ISell {
     }
 
     public double calculateMarkup() {
-        double markup = getBuyingPrice() * 0.2;
-        return markup;
+        return getBuyingPrice() * 0.2;
     }
 
 }

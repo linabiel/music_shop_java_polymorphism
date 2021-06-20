@@ -17,12 +17,7 @@ public class Piano extends SellableInstrument implements IPlay, ISell{
     }
 
     public String play(String sound) {
-        return "playing" + sound;
+        return "playing " + sound;
     }
-
-//    public double calculateMarkup() {
-//        double markup = getBuyingPrice() * 0.2;
-//        return markup;
-//    }
 
 }

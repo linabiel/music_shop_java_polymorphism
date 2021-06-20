@@ -5,7 +5,7 @@ public class Cello extends Instrument implements IPlay {
     }
 
     public String play(String sound) {
-        return "playing" + sound;
+        return "playing " + sound;
     }
 
 }

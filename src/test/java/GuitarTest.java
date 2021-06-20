@@ -5,17 +5,15 @@ import static org.junit.Assert.assertEquals;
 
 public class GuitarTest {
 
-    Guitar guitar;
+    private Guitar guitar;
 
     @Before
     public void before() {
-        double markup = 500 * 0.2;
-        double sellingPrice = 500 + markup;
-        guitar = new Guitar("Wood", "Amber", "Accoustic", 500, sellingPrice, 6);;
+        guitar = new Guitar("Wood", "Amber", "Acoustic", 500, 300, 6);;
     }
 
     @Test
-    public void getPianoBuyingPrice() {
+    public void getGuitarBuyingPrice() {
         assertEquals(500, guitar.getBuyingPrice(), 0.00);
     }
 
@@ -26,6 +24,12 @@ public class GuitarTest {
 
     @Test
     public void getSellingPrice() {
+        guitar.setSellingPrice();
         assertEquals(600, guitar.getSellingPrice(), 0.00);
+    }
+
+    @Test
+    public void getToPlay() {
+        assertEquals("playing whow whow", guitar.play("whow whow"));
     }
 }

@@ -28,4 +28,9 @@ public class Sheet implements ISell{
     public double calculateMarkup() {
         return 0;
     }
+
+    @Override
+    public String getType() {
+        return null;
+    }
 }

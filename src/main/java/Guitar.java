@@ -17,7 +17,7 @@ public class Guitar extends SellableInstrument implements IPlay, ISell{
     }
 
     public String play(String sound) {
-        return "playing" + sound;
+        return "playing " + sound;
     }
 
 }

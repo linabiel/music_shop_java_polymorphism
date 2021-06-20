@@ -1,5 +1,6 @@
 public interface ISell {
 
-    public double calculateMarkup();
+    double calculateMarkup();
 
+    String getType();
 }
